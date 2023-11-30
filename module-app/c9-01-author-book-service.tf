@@ -42,7 +42,7 @@ resource "kubernetes_deployment_v1" "author_book_deployment" {
         service_account_name = "spring-cloud-kubernetes"      
         
         container {
-          image = "ghcr.io/greeta-bookreview-01/author-book-service:b8c5d43f89238843bfd72d96a271899daf65640c"
+          image = "ghcr.io/greeta-bookreview-01/author-book-service:c71df8508acb2b7c1af3dc9e6703cb6dd0296522"
           name  = "author-book"
           image_pull_policy = "Always"
           port {
